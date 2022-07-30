@@ -1,0 +1,25 @@
+{
+  "name": "car-rental",
+  "version": "1.0.0",
+  "description": "this is website about car rental",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/main.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriawanf/Car-Rental.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriawanf/Car-Rental/issues"
+  },
+  "homepage": "https://github.com/andriawanf/Car-Rental#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7"
+  }
+}
