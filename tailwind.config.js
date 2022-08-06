@@ -7,8 +7,10 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary: '#F1F1F2',
-        secondary: '#0F0F0F',
+        primary: '#FBF8F3',
+        secondary: '#232323',
+        third: '#F0ECE3',
+        four: '#381306',
       },
       screens: {
         'sm': '640px',
@@ -19,5 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  
 }
