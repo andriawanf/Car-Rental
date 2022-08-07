@@ -678,6 +678,21 @@ video {
   margin-right: -0.5rem;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-36 {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
 .ml-12 {
   margin-left: 3rem;
 }
@@ -830,6 +845,58 @@ video {
   margin-top: 270px;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[300\] {
+  margin-top: 300;
+}
+
+.mt-\[300ox\] {
+  margin-top: 300ox;
+}
+
+.mt-\[500p\] {
+  margin-top: 500p;
+}
+
+.mt-\[500px\] {
+  margin-top: 500px;
+}
+
+.mt-\[1000px\] {
+  margin-top: 1000px;
+}
+
+.mt-\[3000\] {
+  margin-top: 3000;
+}
+
+.mt-\[3000px\] {
+  margin-top: 3000px;
+}
+
+.mt-\[2000px\] {
+  margin-top: 2000px;
+}
+
+.mt-\[1500px\] {
+  margin-top: 1500px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-\[1400px\] {
+  margin-top: 1400px;
+}
+
+.mt-\[1450px\] {
+  margin-top: 1450px;
+}
+
 .block {
   display: block;
 }
@@ -840,6 +907,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -926,6 +997,10 @@ video {
   flex: none;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -982,6 +1057,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1002,9 +1081,18 @@ video {
   gap: 0.5rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -1037,6 +1125,14 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
 }
 
 .rounded-full {
@@ -1312,6 +1408,21 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1338,6 +1449,14 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pl-36 {
+  padding-left: 9rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .text-center {
@@ -1382,6 +1501,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-extrabold {
