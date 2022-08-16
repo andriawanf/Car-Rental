@@ -18,149 +18,73 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body class="bg-primary">
-    
-    <div class="flex w-full">
-        <!-- Sidebar Start -->
-        <aside class="w-24 bg-primary h-screen shadow-xl">
-            <div class="flex flex-col justify-between px-4 py-6 h-screen">
-                <a href="#" class="mx-auto">
-                    <h1 class="font-bold text-secondary text-2xl">OM</h1>
-                </a>
+<body class="bg-white" style="font-family: 'Poppins', sans-serif;">
+    <div class="flex flex-col gap-5">
+        <div class="px-10 py-4 w-full h-full bg-white border">
+            <nav class="flex flex-row justify-between">
+                <div class="flex flex-row gap-10">
+                    <div class="text-xl text-primary font-bold">
+                        <h1>OnlyMeet</h1>
+                    </div>
+                    <div class="border-l-2"></div>
+                    <div class="text-base text-center py-1 text-third font-medium">
+                        <h1>Started Meeting</h1>
+                    </div>
+                </div>
+                <div class=" bg-gray-100 rounded-lg flex flex-row gap-2 px-2">
+                    <i class="bx bxs-disc bx-sm py-1 text-secondary"></i>
+                    <p class="py-1">01:26:37</p>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="flex w-full px-10">
+            <!-- Right -->
+            <div class="flex flex-col">
+                <div class="flex gap-6 w-full">
+                    <div class="w-48 h-48" >
+                        <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="object-cover  rounded-3xl">
+                        <div class="inline-flex gap-2 relative -top-10 left-2"> 
+                            <p class="bg-third bg-opacity-80 rounded-full text-white px-2 py-1"><i class="bx bxs-microphone"></i></p>
+                            <span class=" px-2 py-1 bg-opacity-80 rounded-full text-white w-fit bg-third text-center">Mark</span>
+                        </div>
+                    </div>
+                    <div class="w-48 h-48" >
+                        <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="object-cover  rounded-3xl">
+                        <div class="inline-flex gap-2 relative -top-10 left-2"> 
+                            <p class="bg-third bg-opacity-80 rounded-full text-white px-2 py-1"><i class="bx bxs-microphone"></i></p>
+                            <span class=" px-2 py-1 bg-opacity-80 rounded-full text-white w-fit bg-third text-center">Mark</span>
+                        </div>
+                    </div>
+                    <div class="w-48 h-48" >
+                        <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="object-cover  rounded-3xl">
+                        <div class="inline-flex gap-2 relative -top-10 left-2"> 
+                            <p class="bg-third bg-opacity-80 rounded-full text-white px-2 py-1"><i class="bx bxs-microphone"></i></p>
+                            <span class=" px-2 py-1 bg-opacity-80 rounded-full text-white w-fit bg-third text-center">Mark</span>
+                        </div>
+                    </div>
+                    <div class="w-48 h-48" >
+                        <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="object-cover  rounded-3xl">
+                        <div class="inline-flex gap-2 relative -top-10 left-2"> 
+                            <p class="bg-third bg-opacity-80 rounded-full text-white px-2 py-1"><i class="bx bxs-microphone"></i></p>
+                            <span class=" px-2 py-1 bg-opacity-80 rounded-full text-white w-fit bg-third text-center">Mark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[53rem] h-[40rem] relative -top-20">
+                    <div class="inline-flex gap-2 relative -bottom-10 left-2"> 
+                        <p class="bg-third bg-opacity-80 rounded-full text-white px-2 py-1"><i class="bx bxs-microphone"></i></p>
+                        <span class=" px-2 py-1 bg-opacity-80 rounded-full text-white w-fit bg-third text-center">Mark</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="object-cover rounded-3xl">
+                </div>
+            </div>
+            <!-- Left -->
+            <div>
                 
-                <div class="flex flex-col gap-6 text-xl mx-auto">
-                    <a href="#">
-                        <ion-icon name="grid-outline" class="text-gray-500"></ion-icon>
-                    </a>
-                    <a href="#" class="text-gray-500">
-                        <ion-icon name="alert-circle-outline"></ion-icon>
-                    </a>
-                    <a href="#" class="text-secondary">
-                        <ion-icon name="videocam"></ion-icon>
-                    </a>
-                    <a href="#" class="text-gray-500">
-                        <ion-icon name="people-outline"></ion-icon>
-                    </a>
-                    <a href="#" class="text-gray-500">
-                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-                    </a>
-                </div>
-
-                <div class="flex flex-col gap-6 mx-auto text-xl text-secondary">
-                    <a href="#" class="text-gray-500 mx-auto"> <ion-icon name="settings-outline"></ion-icon> </a>
-                    <div class="border"></div>
-                    <div >
-                        <img class="w-10 h-10 rounded-full object-cover" src="../assets/images/Foto Profil.jpeg" alt="">
-                    </div>
-                </div>
             </div>
-        </aside>
-        <!-- Sidebar End -->
-
-        <!-- Main Start -->
-        <main class="flex w-full justify-center py-2 pl-4">
-            <div class="flex flex-col gap-6 bg-third w-8/12 rounded-3xl">
-                <div class="w-full h-[85%]">
-                    <img src="https://images.unsplash.com/photo-1630939687530-241d630735df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="w-full h-full object-cover rounded-3xl">
-                </div>
-                <div class="w-full">
-                    <div class="flex flex-row justify-center gap-8 px-4 pt-2">
-                        <div class="flex gap-2 px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="mic-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="videocam-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex gap-2 px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="people-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex gap-2 px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="chatbubbles-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex gap-2 px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="share-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex gap-2 px-6 py-2 rounded-xl bg-primary">
-                            <a href="#" class="text-xl pt-1">
-                                <ion-icon name="radio-button-on-outline"></ion-icon>
-                                <span><i class="bx bx-chevron-up"></i></span>
-                            </a>
-                        </div>
-                        <div class="flex gap-2 px-6 py-2 rounded-xl border-2 border-red-600 hover:bg-red-600 transition duration-300 hover:text-white">
-                            <a href="#" class="text-xl">
-                                <span class="text-sm">Leave Meeting</span>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="flex bg-primary">
-                <div class="w-24 ">
-                    <div class="flex flex-col mx-auto py-4 gap-4">
-                        <a href="#" class="mx-auto text-xl ">
-                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-                        </a>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="../assets/images/Foto Profil.jpeg" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">You</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium text-ellipsis overflow-hidden">Alex</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1794&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Brian</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Lissie</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Anna</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1523478016374-2a27cc521718?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=575&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Marc</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1529582582744-13d8da049432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Le</p>
-                        </div>
-                        <div class="mx-auto">
-                            <img class="w-10 h-10 rounded-xl object-cover" src="https://images.unsplash.com/photo-1534644586429-7681a71bc591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80" alt="">
-                            <p class="text-center text-sm mt-1 font-medium">Marcus</p>
-                        </div>
-                        <a href="#" class="mx-auto text-xl hover:text-2xl transition duration-300">
-                            <ion-icon name="caret-down-circle-outline"></ion-icon>
-                        </a>
-                    </div>
-                </div>
-                <div class="border-l-2"></div>
-                <div class="w-96 px-6 ">
-                    <h1>hello</h1>
-                </div>
-            </div>
-        </main>
-        <!-- Main End -->
+        </div>
     </div>
-    
 </body>
 </html>
