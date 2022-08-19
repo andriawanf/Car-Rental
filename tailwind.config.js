@@ -7,9 +7,11 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary: '#55BF3B',
-        secondary: '#DB503F',
-        third: '#373B41',
+        primary: '#01A1B0',
+        secondary: '#2F2F2F',
+        third: '#F6F6F6',
+        four: '#FDB140',
+        
         
       },
       screens: {
