@@ -74,7 +74,9 @@
                     <div class="w-full h-fit bg-gray-100 rounded-3xl">
                         <div x-show="activeTab===0" >
                             <div class="absolute mt-6 ml-[59rem]">
-                                <i class="icon ion-ios-expand text-xl text-center px-4 py-2 rounded-lg text-gray-400 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300"></i>
+                                <button>
+                                    <i class="icon ion-ios-expand text-xl text-center px-4 py-2 rounded-lg text-gray-400 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300"></i>
+                                </button>
                             </div>
                             <img src="https://images.unsplash.com/photo-1607960402186-3ab215688ebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" class="w-full h-[520px] object-cover rounded-3xl">
                             <div class="absolute w-[61rem] flex justify-between bottom-28 ml-4 h-fit">
@@ -83,7 +85,7 @@
                                     <i class="icon ion-ios-volume-high text-2xl text-center "></i>
                                 </div>
                                 <div class="self-end">
-                                    <div class="flex gap-6 mb-2 w-full">
+                                    <div class="flex gap-6 w-full">
                                         <button>
                                             <i class="icon ion-ios-videocam text-2xl text-center px-4 py-2 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
                                         </button>
@@ -94,14 +96,20 @@
                                             <i class="icon ion-ios-share text-2xl text-center px-5 py-2 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
                                         </button>
                                         <button type="button" onclick="openDropdown(event,'dropdown-id')">
+                                            <i class="bx bxs-layout text-2xl text-center px-5 py-3 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
+                                        </button>
+                                        <button type="button" onclick="openDropdown(event,'dropdown-id')">
                                             <i class="icon ion-ios-more text-2xl text-center px-5 py-2 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
                                         </button>
-                                        <div class="hidden bg-white  text-base z-50 float-right py-2 list-none text-left shadow-lg mb-10 rounded-xl rounded-bl-none" style="min-width:12rem" id="dropdown-id">
+                                        <div class="hidden bg-white  text-base z-50 float-right py-2 list-none text-left drop-shadow-lg rounded-xl rounded-bl-none" style="min-width:12rem" id="dropdown-id">
                                             <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700">
-                                              Action
+                                            Share
                                             </a>
                                             <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700">
                                               Another action
+                                            </a>
+                                            <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700">
+                                              Settings
                                             </a>
                                         </div>
                                     </div>
@@ -145,13 +153,13 @@
                                     <div class="flex gap-4">
                                         <img src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="w-10 h-10 object-cover rounded-full">
                                         <div class="bg-white px-2 py-2 rounded-xl rounded-tl-none w-5/6">
-                                            <p class="font-medium text-sm text-yellow-500">Michel</p>
+                                            <p class="font-medium text-sm text-yellow-500">Jordan</p>
                                             <p class="text-xs">Lorem ipsum dolor sit amet.</p>
                                         </div>
                                     </div>
                                     <div class="flex gap-4">
                                         <div class="bg-white px-2 py-2 rounded-xl rounded-tr-none w-5/6">
-                                            <p class="font-medium text-sm text-yellow-500">Michel</p>
+                                            <p class="font-medium text-sm text-blue-600">Smith</p>
                                             <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odit!</p>
                                         </div>
                                         <img src="https://images.unsplash.com/photo-1633368689270-9d9afa6b8aa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="w-10 h-10 object-cover rounded-full">
@@ -159,13 +167,13 @@
                                     <div class="flex gap-4">
                                         <img src="https://images.unsplash.com/photo-1617077644557-64be144aa306?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="w-10 h-10 object-cover rounded-full">
                                         <div class="bg-white px-2 py-2 rounded-xl rounded-tl-none w-5/6">
-                                            <p class="font-medium text-sm text-yellow-500">Michel</p>
+                                            <p class="font-medium text-sm text-yellow-500">Queen</p>
                                             <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odit!</p>
                                         </div>
                                     </div>
                                     <div class="flex gap-4">
                                         <div class="bg-white px-2 py-2 rounded-xl rounded-tr-none w-5/6">
-                                            <p class="font-medium text-sm text-yellow-500">Michel</p>
+                                            <p class="font-medium text-sm text-blue-600">Smith</p>
                                             <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odit!</p>
                                         </div>
                                         <img src="https://images.unsplash.com/photo-1633368689270-9d9afa6b8aa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" class="w-10 h-10 object-cover rounded-full">
@@ -180,7 +188,7 @@
                                     <div class="flex gap-4">
                                         <img src="https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="w-10 h-10 object-cover rounded-full">
                                         <div class="bg-white px-2 py-2 rounded-xl rounded-tl-none w-5/6">
-                                            <p class="font-medium text-sm text-yellow-500">Michel</p>
+                                            <p class="font-medium text-sm text-yellow-500">Jordan</p>
                                             <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odit!</p>
                                         </div>
                                     </div>
