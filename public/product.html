@@ -93,9 +93,17 @@
                                         <button>
                                             <i class="icon ion-ios-share text-2xl text-center px-5 py-2 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
                                         </button>
-                                        <button>
+                                        <button type="button" onclick="openDropdown(event,'dropdown-id')">
                                             <i class="icon ion-ios-more text-2xl text-center px-5 py-2 rounded-lg text-gray-600 bg-blue-100 bg-opacity-50 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 "></i>
                                         </button>
+                                        <div class="hidden bg-white  text-base z-50 float-right py-2 list-none text-left shadow-lg mb-10 rounded-xl rounded-bl-none" style="min-width:12rem" id="dropdown-id">
+                                            <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700">
+                                              Action
+                                            </a>
+                                            <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700">
+                                              Another action
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="self-end">
@@ -195,6 +203,7 @@
     </div>
 
 
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
     <script>
         function setup() {
         return {
@@ -215,6 +224,18 @@
             ]
             };
         };
+
+        function openDropdown(event,dropdownID){
+            let element = event.target;
+            while(element.nodeName !== "BUTTON"){
+            element = element.parentNode;
+            }
+            var popper = Popper.createPopper(element, document.getElementById(dropdownID), {
+            placement: 'top-start'
+            });
+            document.getElementById(dropdownID).classList.toggle("hidden");
+            document.getElementById(dropdownID).classList.toggle("block");
+        }
     </script>
 </body>
 </html>
